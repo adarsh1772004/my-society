@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  </meta>
+  <title>
+    My locality
+  </title>
+  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  <script src="https://unpkg.com/aframe-event-set-component@4.2.1/dist/aframe-event-set-component.min.js">
+
+  </script>
+  <script src="js/Tour.js"></script>
+  <script src="js/CursorEvents.js"></script>
+</head>
+
+<body>
+  <a-scene id="main-scean">
+    <a-sky id="main-countainer" radius="5000" src="./assets/background.jpg" rotation="0 -90 0"></a-sky>
+    <a-entity id="places-container" cursor-listner tour></a-entity>
+    <a-camera id="camera" wasd-controls="enabled:false;"></a-camera>
+    <a-entity id="app title" position="-0.08 0.73 -1"
+      text="font:exo2bold; align:center;width:1.5; color:#e91e63; value:my house"></a-entity>
+
+  </a-scene>
+</body>
+
+</html>
